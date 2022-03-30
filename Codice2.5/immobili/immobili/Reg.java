@@ -3,7 +3,7 @@ import java.util.*;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime; 
 public class Reg<E> {
-	String specialCharacters=" !#$%&'()*+,-./:;<=>?@[]^_`{|}";
+	String specialCharacters="!#$%&'()*+,-./:;<=>?@[]^_`{|}";
 	static Scanner in = new Scanner (System.in);
 	nodo primo;
 	static String newline = System.getProperty("line.separator");
@@ -16,7 +16,7 @@ public class Reg<E> {
 		String Cognome;
 		String password;
 		String email;
-		int età;
+		int etï¿½;
 		String iva;
 		String pec;
 		String referente;
@@ -49,7 +49,7 @@ public class Reg<E> {
 			System.out.println("Inserire telefono");
 		t.telefono=in.nextLine();
 		if(t.telefono.matches("[0-9]+")==false) {
-			System.out.println("attenzione il numero di telefono non è valido");
+			System.out.println("attenzione il numero di telefono non ï¿½ valido");
 		}
 		}while(t.telefono.matches("[0-9]+")==false);
 		//ciclo controllo mail
@@ -102,15 +102,15 @@ public class Reg<E> {
 				System.out.println("Attenzione codice fiscale non valido");
 			}
 		}while(t.cod_fisc.length()<16);
-		 System.out.println("Inserire età");
-		 t.età=Integer.parseInt(in.nextLine());
+		 System.out.println("Inserire etï¿½");
+		 t.etï¿½=Integer.parseInt(in.nextLine());
 		
 		//ciclo controllo telefono
 		do {
 			System.out.println("Inserire telefono");
 		t.telefono=in.nextLine();
 		if(t.telefono.matches("[0-9]+")==false) {
-			System.out.println("attenzione il numero di telefono non è valido");
+			System.out.println("attenzione il numero di telefono non ï¿½ valido");
 		}
 		}while(t.telefono.matches("[0-9]+")==false);
 		//ciclo controllo password
@@ -155,7 +155,7 @@ public class Reg<E> {
 				newline+"Telefono:  "+ z.telefono +newline+"Email:  "+ z.email +newline+ "Password:  "+ z.password+newline+"Ora registrazione:  "+ z.orario);
 		}
 		if(z.type==1) {
-			System.out.println("PRIVATO"+newline+"Nome:  "+z.Nome + newline +"Cognome:  "+z.Cognome +newline+ "Età:  "+ z.età+newline +"Email:  "+ z.email+newline+"Codice fiscale:  "+ z.cod_fisc+newline+
+			System.out.println("PRIVATO"+newline+"Nome:  "+z.Nome + newline +"Cognome:  "+z.Cognome +newline+ "Etï¿½:  "+ z.etï¿½+newline +"Email:  "+ z.email+newline+"Codice fiscale:  "+ z.cod_fisc+newline+
 					"Telefono:  "+ z.telefono +newline+"Password:  "+ z.password+newline+"Ora registrazione:  "+ z.orario	);
 		}
 		z=z.pros;
